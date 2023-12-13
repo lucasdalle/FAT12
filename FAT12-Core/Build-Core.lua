@@ -1,4 +1,4 @@
-project "Core"
+project "FAT12-Core"
    kind "StaticLib"
    language "C++"
    cppdialect "C++20"

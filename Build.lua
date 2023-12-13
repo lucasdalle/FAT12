@@ -1,8 +1,8 @@
 -- premake5.lua
-workspace "New Project"
+workspace "FAT12"
    architecture "x64"
    configurations { "Debug", "Release", "Dist" }
-   startproject "App"
+   startproject "FAT12-App"
 
    -- Workspace-wide build options for MSVC
    filter "system:windows"
@@ -10,8 +10,8 @@ workspace "New Project"
 
 OutputDir = "%{cfg.system}-%{cfg.architecture}/%{cfg.buildcfg}"
 
-group "Core"
-	include "Core/Build-Core.lua"
+group "FAT12-Core"
+	include "FAT12-Core/Build-Core.lua"
 group ""
 
-include "App/Build-App.lua"
+include "FAT12-App/Build-App.lua"

@@ -1,4 +1,4 @@
-project "App"
+project "FAT12-App"
    kind "ConsoleApp"
    language "C++"
    cppdialect "C++20"
@@ -12,12 +12,12 @@ project "App"
       "Source",
 
 	  -- Include Core
-	  "../Core/Source"
+	  "../FAT12-Core/Source"
    }
 
    links
    {
-      "Core"
+      "FAT12-Core"
    }
 
    targetdir ("../Binaries/" .. OutputDir .. "/%{prj.name}")
